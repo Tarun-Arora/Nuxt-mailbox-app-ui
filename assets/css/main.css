@@ -74,6 +74,7 @@ body {
   display: flex;
   font-size: 14px;
   border: 1px solid #E5E7EB;
+  cursor: pointer;
 }
 
 .mailbox-message:hover {
@@ -152,6 +153,10 @@ body {
   align-items: center;
   align-self: stretch;
   border-radius: 54px;
+}
+
+.nav-action-button:hover {
+  cursor: pointer;
 }
 
 .nav-action-buttons {

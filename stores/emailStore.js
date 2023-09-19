@@ -11,9 +11,14 @@ export const useEmailsSelectedStore = defineStore('emailsSelectedStore', () => {
         emailsSelected.value--
     }
 
+    const setValue = (payload) => {
+        emailsSelected.value = payload
+    }
+
     return {
         emailsSelected,
         incrementSelectedCount,
         decrementSelectedCount,
+        setValue,
     }
 })

@@ -5,7 +5,7 @@
 
 <template>
   <span class="mailbox-action">
-    <input type="checkbox" class="mail-checkbox">
+    <input type="checkbox" class="mail-checkbox" @change="(e) => this.$emit('toggleSelectAll', e.target.checked)">
     Email Selected ({{ emailStore.emailsSelected }})
     <div class="action-button-container">
       <button class="action-button">
