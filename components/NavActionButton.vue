@@ -1,7 +1,7 @@
 <script setup>
     const props = defineProps({
         message: String,
-        count: Number,
+        count: String,
         icon: String,
     });
 </script>

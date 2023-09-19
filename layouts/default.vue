@@ -12,7 +12,6 @@ useHead({
 watchEffect(async () => {
   // TODO: Read file/call API and put sample data
   // mailboxesStore.setMailboxes(data?.value)
-  console.log("Hi")
 })
 </script>
 

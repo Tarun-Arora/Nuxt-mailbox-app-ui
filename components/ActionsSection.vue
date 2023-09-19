@@ -1,12 +1,12 @@
 <script setup>
-
+  import { useEmailsSelectedStore } from "@/stores/emailStore";
+  const emailStore = useEmailsSelectedStore()
 </script>
 
 <template>
   <span class="mailbox-action">
     <input type="checkbox" class="mail-checkbox">
-    <!-- TODO: Make this number dynamic  -->
-    Email Selected (0)
+    Email Selected ({{ emailStore.emailsSelected }})
     <div class="action-button-container">
       <button class="action-button">
         <svg xmlns="http://www.w3.org/2000/svg" width="19" height="20" viewBox="0 0 19 20" fill="none">

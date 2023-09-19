@@ -4,7 +4,10 @@ export default defineNuxtConfig({
   css: ['@/assets/css/main.css'],
   pinia: {
     autoImports: [
-      'defineStore'
+      'defineStore',
     ]
   },
+  modules: [
+    '@pinia/nuxt',
+  ]
 })
