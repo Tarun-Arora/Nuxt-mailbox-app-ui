@@ -1,11 +1,15 @@
 <script setup lang="ts">
 definePageMeta({
-  middleware: (from) => {
-    // Define middleware, if needed
-  }
+  // middleware: 'authentication',
+  title: 'Emails'
 })
 </script>
 
 <template>
-  <div>Index</div>
+  <section>
+    <LazyLabelsWrapper />
+    <div>
+      <LazyMessage />
+    </div>
+  </section>
 </template>
